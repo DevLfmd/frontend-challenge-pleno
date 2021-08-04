@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- Carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide" style="margin-top: 57px;" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100 img-fluid" src="https://ezoom.com.br/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-22-at-16.22.14-2.jpeg" alt="MarketPlace">
@@ -27,7 +27,7 @@
     </div>
     
     <!-- Clientes -->
-    <div class="owl-carousel owl-theme mt-5 mb-5">
+    <div id="sobre" class="owl-carousel owl-theme mt-5 mb-5">
         @forEach($data['clients'] as $client)
             <div class="item">
                 <img width="150px" height="110px" src="{{ $client['link'].$client['image'] }}" alt="{{ $client['title'] }}" />
@@ -41,7 +41,7 @@
     </div>
 
     <!-- Estamos integrados -->
-    <div class="container">
+    <div id="ajuda" class="container">
         <div class="col-md-12">
             <div class="row mt-5 align-items-center">
                 @forEach($data['services'] as $service)
@@ -74,7 +74,6 @@
         <hr style="margin-bottom: 0" />
     </div>
 
-
     <!-- Banner -->
     <div class="col-md-12">
         <div class="row align-items-center">
@@ -100,7 +99,9 @@
             </div>
         </div>
     </div>
-    <div class="col-md-12">
+
+    <!-- NewsLatter -->
+    <div id="contato" class="col-md-12">
         <div class="row" style="background: #00182c; color: #FFF; text-align: center; padding: 60px;">
             <div class="col-md-12">
                 <h2 class="font-weight-bold">Newslatter</h2>

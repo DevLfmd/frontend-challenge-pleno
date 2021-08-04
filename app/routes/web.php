@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\PriceController;
+use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\DeveloperController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,4 +17,5 @@ use App\Http\Controllers\PriceController;
 */
 
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/prices', [PriceController::class, 'index'])->name('prices');
+Route::get('/precos', [ServiceController::class, 'index'])->name('prices.index');
+Route::get('/desenvolvedores', [DeveloperController::class, 'index'])->name('developers.index');

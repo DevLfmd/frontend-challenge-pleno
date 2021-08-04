@@ -52,12 +52,13 @@
             }
 
             .font-weight-bold { font-weight: bold; }
-            
         </style>
     </head>
     <body>
         @include('navbar')
-            @yield('content')
+            <div style="margin-top: 62px !important;margin-bottom: 57px !important;">
+                @yield('content')
+            </div>
         @include('footer')
 
         @yield('scripts')

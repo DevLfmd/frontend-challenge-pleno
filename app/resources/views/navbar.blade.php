@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="box-shadow: 1px 0px 3px #000;">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="/">
     <img class="img-fluid" style="height:64px" src="{{ asset('logo.png') }}" />
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,20 +7,20 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto fixed font-weight-bold">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Sobre</a>
+      <li class="nav-item">
+        <a class="nav-link" href="http://localhost:8000/#sobre">Sobre</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ route('prices') }}">Preços</a>
+        <a class="nav-link" href="{{ route('prices.index') }}">Preços</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Desenvolvedores</a>
+        <a class="nav-link" href="{{ route('developers.index') }}">Desenvolvedores</a>
       </li>
       <li class="nav-item d-md-none d-lg-none d-xl-none">
-        <a class="nav-link" href="#">Ajuda</a>
+        <a class="nav-link" href="http://localhost:8000/#ajuda">Ajuda</a>
       </li>  
       <li class="nav-item d-md-none d-lg-none d-xl-none">
-        <a class="nav-link" href="#">Contato</a>
+        <a class="nav-link" href="http://localhost:8000/#contato">Contato</a>
       </li>
     </ul>
     <div class="my-2 my-lg-0 d-md-none">
@@ -29,16 +29,16 @@
     </div>
     <div class="my-2 my-lg-0 d-none d-md-block">
       <ul class="navbar-nav mr-auto fixed font-weight-bold align-items-center">
-        <li class="nav-item active">
+        <li class="nav-item">
           <i class="fas fa-search"></i>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link font-weight-bold" href="#">Ajuda</a>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="http://localhost:8000/#ajuda">Ajuda</a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link font-weight-bold" href="#">Contato</a>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="http://localhost:8000/#contato">Contato</a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link font-weight-bold btn btn-outline-dark" style="border-radius: 50px; height: 40px; width: 100%" href="#">Começar</a>
         </li>
       </ul>
