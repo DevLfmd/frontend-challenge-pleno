@@ -1,0 +1,22 @@
+git clone https://github.com/DevLfmd/frontend-challenge-pleno.git challenge_fullstack
+cd challenge_fullstack/app
+composer install
+
+Configurar arquivo de enviroment, o projeto no momento só necessita de conexão mysql, podemos renomear o arquivo "env.example" para ".env".
+
+Configurar em .env as seguintes variáveis:
+
+DB_DATABASE
+DB_USERNAME
+DB_PASSWORD
+
+O banco que utilizei foi o mysql, então devemos deixar o DB_CONNECTION como mysql.
+
+php artisan migrate
+php artisan db:seed --class=ServiceSeeder
+php artisan db:seed --class=DeveloperSeeder
+php artisan db:seed --class=DeveloperServiceSeeder
+php artisan key:generate
+php artisan serve
+
+Acesse em seu browser localhost:8000

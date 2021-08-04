@@ -16,7 +16,6 @@ class DeveloperSeeder extends Seeder
     {
         DB::table('developers')->insert(array(
             [
-                'id' => 0,
                 'name' => 'Luiz Fernando Miranda Dias',
                 'age' => '23',
                 'description' => 'O desenvolvedor full stack é o profissional habilitado para compreender e operar em todas as camadas do desenvolvimento de um projeto, desde a criação de servidores internos até interfaces de comunicação com o usuário final.',
@@ -25,7 +24,6 @@ class DeveloperSeeder extends Seeder
                 'updated_at' => '2021-04-12 13:46:47'
             ],
             [
-                'id' => 1,
                 'name' => 'Júlia Moura Garcia',
                 'age' => '21',
                 'description' => 'O Desenvolvedor mobile é o profissional que tem habilidades para criar um projeto de elaboração de aplicativo de celular, para qualquer finalidade, inclusive a educação.',
@@ -34,7 +32,6 @@ class DeveloperSeeder extends Seeder
                 'updated_at' => '2021-04-12 13:46:47'
             ],
             [
-                'id' => 2,
                 'name' => 'Ana Silva',
                 'age' => '32',
                 'description' => 'Administrador de banco de dados, comumente chamado de DBA (sigla em inglês de Database administrator), é o profissional responsável por gerenciar, instalar, configurar, atualizar e monitorar um banco de dados ou sistemas de bancos de dados.',
@@ -43,7 +40,6 @@ class DeveloperSeeder extends Seeder
                 'updated_at' => '2021-04-12 13:46:47'
             ],
             [
-                'id' => 3,
                 'name' => 'Josimar Júnior',
                 'age' => '25',
                 'description' => 'A infraestrutura de TI consiste nos componentes e serviços que fornecem a base para sustentar todos os sistemas de informação de uma organização.',

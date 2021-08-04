@@ -16,7 +16,6 @@ class ServiceSeeder extends Seeder
     {
         DB::table('services')->insert(array(
             [
-                'id' => 0,
                 'name' => 'Desenvolvimento Mobile',
                 'price' => 6500.00,
                 'promotional_price' => 5800.00,
@@ -26,7 +25,6 @@ class ServiceSeeder extends Seeder
                 'updated_at' => '2021-04-12 13:46:47'
             ],
             [
-                'id' => 1,
                 'name' => 'Desenvolvimento Web',
                 'price' => 4500.00,
                 'promotional_price' => 3800.00,
@@ -36,7 +34,6 @@ class ServiceSeeder extends Seeder
                 'updated_at' => '2021-04-12 13:46:47'
             ],
             [
-                'id' => 2,
                 'name' => 'Desenvolvimento Laravel',
                 'price' => 5500.00,
                 'promotional_price' => 4900.00,
@@ -46,7 +43,6 @@ class ServiceSeeder extends Seeder
                 'updated_at' => '2021-04-12 13:46:47'
             ],
             [
-                'id' => 3,
                 'name' => 'Analista de banco de dados - MYSQL',
                 'price' => 8500.00,
                 'promotional_price' => 7800.00,
@@ -56,7 +52,6 @@ class ServiceSeeder extends Seeder
                 'updated_at' => '2021-04-12 13:46:47'
             ],
             [
-                'id' => 4,
                 'name' => 'Analista de cloud',
                 'price' => 8000.00,
                 'promotional_price' => 7800.00,
